@@ -56,6 +56,59 @@ body{
     color: #fff;
     float: right;
 }
+span .toggle{
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 99;
+}
+span .ripple{
+    background: #fff;
+    display: block;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    right: 10px;
+    transition: all 200ms;
+    z-index: 1;
+}
+.pass-strength{
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+.strength-label{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.strength-percent{
+    flex: 1;
+    height: 5px;
+    border-radius: 10px;
+    display: block;
+    background: #eee;
+}
+.strength-percent span{
+    display: block;
+    height: 100%;
+    transition: all 400ms;
+    border-radius: 10px;
+}
+.weak{
+    background: red;
+    width: 33%;
+}
+.average{
+    background: #ffd000;
+    width: 66%;
+}
+.strong{
+    background: green;
+    width: 100%;
+}
 .btn-submit{
     position: relative;
     display: inline-block;
