@@ -10,7 +10,7 @@
 <body>
     <div class="login-box">
         <h2>Login</h2>
-        <form>
+        <form id="btn">
         <div class="user-box">
             <input class="input" type="text" name="" required="">
             <label>Username</label>
@@ -19,11 +19,19 @@
         <div class="user-box">
             <input class="input" type="password" name="" required="">
             <label>Password</label>
+            <span class="toggle"></span>
+            <span class="ripple"></span>
+        </div>
+        <div class="pass-strength">
+            <div class="strength-percent">
+                <span></span>
+            </div>
+            <span class="strength-label">Strength</span>
         </div>
         <div>
             <a href="#" class="forgot-pass">Forgot Password</a>
         </div>
-        <a href="#" class="btn-submit" id="btn">
+        <a href="#" class="btn-submit">
             <span></span>
             <span></span>
             <span></span>
@@ -32,6 +40,6 @@
         </a>
         </form>
     </div>
-    <script src="/login.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
